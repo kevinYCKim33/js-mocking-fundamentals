@@ -6,6 +6,7 @@ function thumbWar(player1, player2) {
   let player2Wins = 0
   while (player1Wins < numberToWin && player2Wins < numberToWin) {
     const winner = utils.getWinner(player1, player2)
+    // const winner = utils.getWinner(player1) // this will pass monkey patching unfortunately
     if (winner === player1) {
       player1Wins++
     } else if (winner === player2) {

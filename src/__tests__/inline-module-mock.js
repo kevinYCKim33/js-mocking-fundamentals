@@ -1,3 +1,5 @@
+// Lesson 5 of 6
+
 const thumbWar = require('../thumb-war')
 const utilsMock = require('../utils')
 

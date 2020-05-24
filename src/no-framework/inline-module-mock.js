@@ -1,3 +1,5 @@
+// Lesson 5 of 6
+
 function fn(impl = () => {}) {
   const mockFn = (...args) => {
     mockFn.mock.calls.push(args)
@@ -8,6 +10,7 @@ function fn(impl = () => {}) {
 }
 
 const utilsPath = require.resolve('../utils')
+// yeah...this is insane...
 require.cache[utilsPath] = {
   id: utilsPath,
   filename: utilsPath,
